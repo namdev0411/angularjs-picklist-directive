@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Custom Picklist Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="salesforce-lightning-design-system.min.css">
+</head>
+
+<body ng-controller="MainCtrl">
+    <div class="container">
+        <h1 class="slds-text-heading_large">Custom Picklist Demo</h1>
+        <custom-picklist options="genderOptions" selected-option="selectedGenderOption"></custom-picklist>
+        <h2 class="slds-m-top_small">Selected option:</h2>
+        <pre>{{ selectedGenderOption | json }}</pre>
+    </div>
+</body>
+
+</html>
